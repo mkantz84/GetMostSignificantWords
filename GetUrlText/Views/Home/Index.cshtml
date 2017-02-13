@@ -1,0 +1,11 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<script></script>
+<h2>Index</h2>
+@using (Html.BeginForm("GetUrlText", "Home"))
+{
+    <input id="txtUrl" type="text" placeholder="Insert URL here" name="URL" />
+    <input id="sbmt" type="submit" value="submit" />
+}
