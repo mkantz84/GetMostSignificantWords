@@ -1,11 +1,9 @@
 ﻿using GetUrlText.Models;
-using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
-using System.Web;
 using System.Web.Mvc;
 
 namespace GetUrlText.Controllers
@@ -29,7 +27,6 @@ namespace GetUrlText.Controllers
             {
                 modelData.Add(new Data() { Name = key.Key, Amount = key.Value });
             }
-            //modelData.dict = wordsList.ToDictionary(t => t.Key, t => t.Value);
             return View(modelData);
         }
 
